@@ -20,337 +20,328 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- Navbar -->
-      <div class="container-fluid m-0 p-0">
-        <header
+    <!-- Navbar -->
+    <div class="container-fluid m-0 p-0">
+      <header
+        class="
+          d-flex
+          flex-wrap
+          align-items-center
+          justify-content-center justify-content-md-between
+          p-3
+          bg-dark
+          fixed-top
+        "
+      >
+        <a
+          href="/"
           class="
             d-flex
-            flex-wrap
             align-items-center
-            justify-content-center justify-content-md-between
-            p-3
-            bg-dark
-            fixed-top
+            col-md-3
+            mb-2
+            px-5
+            mb-md-0
+            text-white text-decoration-none
           "
         >
-          <a
-            href="/"
-            class="
-              d-flex
-              align-items-center
-              col-md-3
-              mb-2
-              px-5
-              mb-md-0
-              text-white text-decoration-none
-            "
+          <img
+            class="bi me-2"
+            width="40"
+            height="40"
+            src="/images/favicon/favicon-96x96.png"
+          />
+          <span class="fs-4">App</span>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a href="/about" class="nav-link px-2 link-light" id="about"
+              >About</a
+            >
+          </li>
+
+          <li>
+            <a href="/enroll" class="nav-link px-2 link-light" id="enroll"
+              >Enroll</a
+            >
+          </li>
+          <li>
+            <a href="/jobs" class="nav-link px-2 link-light" id="jobs">Jobs</a>
+          </li>
+          <li>
+            <a href="/events" class="nav-link px-2 link-light" id="events"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a href="/contact" class="nav-link px-2 link-light" id="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <a href="/login" class="btn btn-sm btn-danger m-1" id="login"
+            >Staff</a
           >
-            <img
-              class="bi me-2"
-              width="40"
-              height="40"
-              src="/images/favicon/favicon-96x96.png"
-            />
-            <span class="fs-4">App</span>
-          </a>
-
-          <ul
-            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li>
-              <a href="/about" class="nav-link px-2 link-light" id="about"
-                >About</a
-              >
-            </li>
-
-            <li>
-              <a href="/enroll" class="nav-link px-2 link-light" id="enroll"
-                >Enroll</a
-              >
-            </li>
-            <li>
-              <a href="/jobs" class="nav-link px-2 link-light" id="jobs"
-                >Jobs</a
-              >
-            </li>
-            <li>
-              <a href="/events" class="nav-link px-2 link-light" id="events"
-                >Events</a
-              >
-            </li>
-            <li>
-              <a href="/contact" class="nav-link px-2 link-light" id="contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-
-          <div class="col-md-3 text-end">
-            <a href="/login" class="btn btn-sm btn-danger m-1" id="login"
-              >Staff</a
-            >
-          </div>
-        </header>
-      </div>
-
-      <script>
-        // Hide Buttons
-        $("#login").show();
-        if (window.location.href.indexOf("login") > -1) {
-          $("#login").hide();
-        }
-
-        // Show active link
-        if (window.location.href.indexOf("enroll") > -1) {
-          $("#enroll").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("jobs") > -1) {
-          $("#jobs").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("events") > -1) {
-          $("#events").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("about") > -1) {
-          $("#about").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("contact") > -1) {
-          $("#contact").toggleClass("link-light link-warning");
-        }
-      </script>
-
-      <!-- Content -->
-
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
         </div>
+      </header>
+    </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
+    <script>
+      // Hide Buttons
+      $("#login").show();
+      if (window.location.href.indexOf("login") > -1) {
+        $("#login").hide();
+      }
 
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>KESA School</h1>
-                <p>Education with a Difference</p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="/enroll"
-                    >Apply today</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+      // Show active link
+      if (window.location.href.indexOf("enroll") > -1) {
+        $("#enroll").toggleClass("link-light link-warning");
+      } else if (window.location.href.indexOf("jobs") > -1) {
+        $("#jobs").toggleClass("link-light link-warning");
+      } else if (window.location.href.indexOf("events") > -1) {
+        $("#events").toggleClass("link-light link-warning");
+      } else if (window.location.href.indexOf("about") > -1) {
+        $("#about").toggleClass("link-light link-warning");
+      } else if (window.location.href.indexOf("contact") > -1) {
+        $("#contact").toggleClass("link-light link-warning");
+      }
+    </script>
 
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
+    <!-- Content -->
 
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>We are KESA</h1>
-                <p class="small text">
-                  A private institution situated at a secure, serene and
-                  conducive learning environment...
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-success" href="/about">Learn more</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Join us</h1>
-                <p>
-                  <a class="btn btn-lg btn-warning" href="#">Browse gallery</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
         <button
-          class="carousel-control-prev"
           type="button"
           data-bs-target="#carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
         <button
-          class="carousel-control-next"
           type="button"
           data-bs-target="#carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
 
-      <div class="container-fluid p-0 pt-5 mt-5">
-        <div class="container text-center my-5">
-          <i class="fa fa-3x fa-school mb-3 mb-3"></i>
-          <p class="lead">KESA School is a</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
 
-          <hr class="featurette-divider" />
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <i class="fa fa-3x fa-book-open"></i>
-              <h2 class="featurette-heading">
-                Education.
-                <span class="text-muted">Updated Curriculum.</span>
-              </h2>
-              <p class="lead">
-                We believe in offering holistic and quality CBC
-                (Competence-Based Curriculum) education, the new educational
-                curriculum according to the directive of the Ministry of
-                Education of Kenya...
-              </p>
-            </div>
-            <div class="col-md-5">
-              <img
-                class="
-                  bd-placeholder-img bd-placeholder-img-lg
-                  featurette-image
-                  img-fluid
-                  mx-auto
-                "
-                width="500"
-                height="500"
-                src="/images/"
-                alt="CBC - the new school curriculum in Kenya"
-              />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" />
-
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <i class="fa fa-3x fa-plus mb-3"></i>
-              <h2 class="featurette-heading">
-                Benefits.
-                <span class="text-muted">Extras.</span>
-              </h2>
-              <p class="lead">
-                Some other benefits include: <br />
-                Computer studies <br />
-                Transport services <br />
-                Guidance and counselling
-              </p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img
-                class="
-                  bd-placeholder-img bd-placeholder-img-lg
-                  featurette-image
-                  img-fluid
-                  mx-auto
-                "
-                width="500"
-                height="500"
-                src="/images/"
-                alt="Picture collation: computers, transport"
-              />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" />
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <i class="fa fa-3x fa-pen mb-3"></i>
-              <h2 class="featurette-heading">
-                Registration. <span class="text-muted">Ongoing.</span>
-              </h2>
-              <p class="lead">Student admissions are still in progress.</p>
-            </div>
-            <div class="col-md-5">
-              <img
-                class="
-                  bd-placeholder-img bd-placeholder-img-lg
-                  featurette-image
-                  img-fluid
-                  mx-auto
-                "
-                width="500"
-                height="500"
-                src="/images/"
-                alt="Picture collation: computers, transport"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer mt-auto py-4 bg-light">
           <div class="container">
-            <a href="#" class="float-end btn btn-lg btn-outline-dark"
-              ><div class="fa fa-angle-up"></div
-            ></a>
-            <p class="text-muted">&copy; 2021 App, Inc.</p>
+            <div class="carousel-caption text-start">
+              <h1>KESA School</h1>
+              <p>Education with a Difference</p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="/enroll">Apply today</a>
+              </p>
+            </div>
           </div>
-        </footer>
+        </div>
 
-        <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/fontawesome/js/all.min.js"></script>
-        <script src="/jquery/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>We are KESA</h1>
+              <p class="small text">
+                A private institution situated at a secure, serene and conducive
+                learning environment...
+              </p>
+              <p>
+                <a class="btn btn-lg btn-success" href="/about">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Join us</h1>
+              <p>
+                <a class="btn btn-lg btn-warning" href="#">Browse gallery</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-fluid p-0 pt-5 mt-5">
+      <div class="container text-center my-5">
+        <i class="fa fa-3x fa-school mb-3 mb-3"></i>
+        <p class="lead">KESA School is a</p>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <i class="fa fa-3x fa-book-open"></i>
+            <h2 class="featurette-heading">
+              Education.
+              <span class="text-muted">Updated Curriculum.</span>
+            </h2>
+            <p class="lead">
+              We believe in offering holistic and quality CBC (Competence-Based
+              Curriculum) education, the new educational curriculum according to
+              the directive of the Ministry of Education of Kenya...
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="
+                bd-placeholder-img bd-placeholder-img-lg
+                featurette-image
+                img-fluid
+                mx-auto
+              "
+              width="500"
+              height="500"
+              src="/images/"
+              alt="CBC - the new school curriculum in Kenya"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <i class="fa fa-3x fa-plus mb-3"></i>
+            <h2 class="featurette-heading">
+              Benefits.
+              <span class="text-muted">Extras.</span>
+            </h2>
+            <p class="lead">
+              Some other benefits include: <br />
+              Computer studies <br />
+              Transport services <br />
+              Guidance and counselling
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              class="
+                bd-placeholder-img bd-placeholder-img-lg
+                featurette-image
+                img-fluid
+                mx-auto
+              "
+              width="500"
+              height="500"
+              src="/images/"
+              alt="Picture collation: computers, transport"
+            />
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <i class="fa fa-3x fa-pen mb-3"></i>
+            <h2 class="featurette-heading">
+              Registration. <span class="text-muted">Ongoing.</span>
+            </h2>
+            <p class="lead">Student admissions are still in progress.</p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="
+                bd-placeholder-img bd-placeholder-img-lg
+                featurette-image
+                img-fluid
+                mx-auto
+              "
+              width="500"
+              height="500"
+              src="/images/"
+              alt="Picture collation: computers, transport"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer mt-auto py-4 bg-light">
+        <div class="container">
+          <a href="#" class="float-end btn btn-lg btn-outline-dark"
+            ><div class="fa fa-angle-up"></div
+          ></a>
+          <p class="text-muted">&copy; 2021 App, Inc.</p>
+        </div>
+      </footer>
+
+      <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/fontawesome/js/all.min.js"></script>
+      <script src="/jquery/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
     </div>
   </body>
 </html>
