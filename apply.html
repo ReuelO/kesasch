@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KESA</title>
 
-    <link rel="icon" type="image/png" href="/src/favicon.png" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
@@ -92,207 +92,119 @@
     <!-- Start: Text -->
     <div class="container-fluid p-0 pt-5 mt-5">
       <div class="container pb-5">
-        <h1 class="display-5"><%= heading %></h1>
-        <p class="lead">Apply for a new student</p>
+        <h1 class="display-5">Apply</h1>
+        <p class="lead">Student registration in progress</p>
 
         <hr class="my-4" />
 
-        <div class="card p-3">
-          <div class="card-body">
-            <h2 class="card-title text-center mb-4">
-              Application Requirements
-            </h2>
-            <p class="card-text"></p>
-          </div>
-        </div>
+        <h2 class="text-center mb-4">Schedule</h2>
+        <p class="lead">Official opening date: 26th July 2021</p>
+        <p class="lead">Interview dates: 19th-22nd July 2021</p>
+        <p class="lead">Student admission is ongoing</p>
 
+        <hr class="my-4" />
+
+        <h2 class="text-center mb-4">Requirements</h2>
+        <p class="lead">
+          Some student details are needed for registration, namely:
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item">2 colored passport photos</li>
+          <li class="list-group-item">Birth certificate</li>
+          <li class="list-group-item">Learner's UPI number</li>
+          <li class="list-group-item">Current learner's report card</li>
+        </ul>
+
+        <hr class="my-4" />
+
+        <h2 class="text-center mb-4">Fee Structure</h2>
+        <p class="lead">Year: 2021</p>
         <br />
+        <table class="table table-striped table-inverse table-responsive">
+          <thead class="thead-inverse">
+            <tr>
+              <th colspan="2"><b>PRE-PRIMARY (PP1 & PP2)</b></th>
+              <th colspan="2"><b>GRADE 1-5</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1ST TERM</td>
+              <td>14,500</td>
+              <td>1ST TERM</td>
+              <td>15,500</td>
+            </tr>
+            <tr>
+              <td scope="row">2ND TERM</td>
+              <td>10,500</td>
+              <td>2ND TERM</td>
+              <td>10,700</td>
+            </tr>
+            <tr>
+              <td scope="row">3RD TERM</td>
+              <td>7,000</td>
+              <td>3RD TERM</td>
+              <td>7,200</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="list-group">
+          NOTE:
+          <li class="list-group-item">2 colored passport photos</li>
+          <li class="list-group-item">Birth certificate</li>
+          <li class="list-group-item">Learner's UPI number</li>
+          <li class="list-group-item">Admission fee of KES 3000</li>
+          <li class="list-group-item">Current report card</li>
+        </ul>
+        <p class="lead">Lunch is included in the school fees</p>
+        <p class="lead">
+          A non-refundable admission fee of KES 3000 is required for
+          registration (for new students only)
+        </p>
 
-        <div class="card p-3">
-          <div class="card-body">
-            <h2 class="card-title text-center mb-4">
-              Student Application Form
-            </h2>
+        <hr class="my-4" />
+        <p class="lead">
+          Computer classes are offered for all pupils (from PP1 to Grade 5)
+        </p>
+        <p class="lead">
+          All fees must be paid in full at the beginning of each term
+        </p>
+        <p class="lead">
+          The school bursar is available during working days from 8:00AM to
+          5:00PM
+        </p>
+        <p class="lead">
+          All financial transactions must be effected to the school's accounts
+          office only. The school will not be responsible for the loss of fees
+          or any other payment amde through an unauthorized channel
+        </p>
+        <p class="lead">
+          Fees are payable in the following account: <br />
+          <b>KCB Account No. <u>1282480391</u> - KEROKA BRANCH</b> <br />
+          Account Name: <i>KI ELITE SPORTS ACADEMY (KESA) LTD.</i>
+        </p>
 
-            <form class="small form" action="/enroll" method="POST">
-              <!-- Message tag here -->
-              <div class="row mb-3">
-                <h5>Parent's Details</h5>
+        <hr class="my-4" />
 
-                <div class="col-md">
-                  <label for="gname">Full Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="gname"
-                    id="gname"
-                    required
-                  />
-                </div>
-                <div class="col-md">
-                  <label for="gemail">Email Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="gemail"
-                    id="gemail"
-                    required
-                  />
-                  <div class="form-text">
-                    We will never share your email with anyone
-                  </div>
-                </div>
-                <div class="col-md">
-                  <label for="gphone">Phone Number</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="gphone"
-                    id="gphone"
-                    required
-                  />
-                  <div class="form-text">
-                    We will use this contact to reach you
-                  </div>
-                </div>
-              </div>
+        <h2 class="text-center mb-4">School Uniform</h2>
+        <p class="lead">
+          All school uniforms are available in school at an affordable price
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item">Uniforms (2 pairs) = KES 4000</li>
+          <li class="list-group-item">Tie = KES 150</li>
+          <li class="list-group-item">Tracksuit = KES 2000</li>
+          <li class="list-group-item">PE Kit = KES 1500</li>
+          <li class="list-group-item">Church uniform (optional) = KES 3000</li>
+        </ul>
 
-              <hr class="my-4" />
+        <hr class="my-4" />
 
-              <h5>Student's Details</h5>
-              <div class="row mb-3">
-                <div class="col-md">
-                  <label for="sname">Full Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="sname"
-                    id="sname"
-                    required
-                  />
-                </div>
-                <div class="col-md">
-                  <label for="dob">Date of Birth</label>
-                  <input
-                    type="date"
-                    class="form-control"
-                    name="dob"
-                    min="2008-01-01"
-                    max="2021-01-01"
-                    id="dob"
-                  />
-                </div>
-                <div class="col-md">
-                  <label for="gender">Gender</label>
-                  <select
-                    class="form-select"
-                    name="gender"
-                    id="gender"
-                    required
-                  >
-                    <option selected disabled hidden>Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md">
-                  <label for="previous">Previous School</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="previous"
-                    id="previous"
-                  />
-                  <div class="form-text">If there is none, leave blank</div>
-                </div>
-                <div class="col-md">
-                  <label for="level">School Level (CBC)</label>
-                  <select class="form-select" name="level" id="level" required>
-                    <option selected disabled hidden>Select Level</option>
-                    <option value="pp">Pre-Primary (PP1, PP2)</option>
-                    <option value="lp">Lower Primary (Grade 1-3)</option>
-                    <option value="up">Upper Primary (Grade 3-6)</option>
-                  </select>
-                  <div class="form-text">
-                    * Competence-Based Curriculum (CBC) Education System
-                  </div>
-                </div>
-                <div class="col-md">
-                  <label for="grade">Grade</label>
-                  <select class="form-select" name="grade" id="grade" required>
-                    <option selected disabled hidden>Select Grade</option>
-                    <option value="pp1">PP1</option>
-                    <option value="pp2">PP2</option>
-                    <option value="g1">Grade 1</option>
-                    <option value="g2">Grade 2</option>
-                    <option value="g3">Grade 3</option>
-                    <option value="g4">Grade 4</option>
-                    <option value="g5">Grade 5</option>
-                    <option value="g6">Grade 6</option>
-                  </select>
-                  <div class="form-text">The grade the child is to join</div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md">
-                  <label for="docs">Documents</label>
-                  <input
-                    type="file"
-                    class="form-control"
-                    name="documents"
-                    id="docs"
-                    required
-                  />
-                  <div class="form-text">
-                    Include all relevant official documents (e.g., Birth
-                    Certificate, Health Clearance, School Transfer Letter)
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn btn-outline-secondary" type="reset">
-                Reset
-              </button>
-              <button class="btn btn-success" type="submit">Submit Form</button>
-            </form>
-
-            <script>
-              // DOB min and max dates
-              var minYear = yyyy - 18;
-              var maxYear = yyyy - 2;
-              minDate = minYear + "-" + mm + "-" + dd;
-              maxDate = maxYear + "-" + mm + "-" + dd;
-              document.getElementById("dob").setAttribute("min", minDate);
-              document.getElementById("dob").setAttribute("max", maxDate);
-
-              // Class Selection
-              $(document).ready(function () {
-                $("#grade option[value]").hide();
-                $("#level").on("change", function () {
-                  if (this.value === "pp") {
-                    $("#grade option[value]").hide();
-                    $("option[value='pp1']").show();
-                    $("option[value='pp2']").show();
-                  } else if (this.value === "lp") {
-                    $("#grade option[value]").hide();
-                    $("option[value='g1']").show();
-                    $("option[value='g2']").show();
-                    $("option[value='g3']").show();
-                  } else {
-                    $("#grade option[value]").hide();
-                    $("option[value='g4']").show();
-                    $("option[value='g5']").show();
-                    $("option[value='g6']").show();
-                  }
-                });
-              });
-            </script>
-          </div>
-        </div>
-
-        <br />
+        <h2 class="text-center mb-4">Transport Services</h2>
+        <p class="lead">
+          School vans are available to collect and drop pupils at affordable
+          charges within specific places
+        </p>
       </div>
       <!-- End: Text -->
 
