@@ -48,19 +48,14 @@
             text-white text-decoration-none
           "
         >
-          <img
-            class="bi me-2"
-            width="40"
-            height="40"
-            src="/images/favicon/favicon-96x96.png"
-          />
-          <span class="fs-4">App</span>
+          <img class="bi me-2" width="40" height="40" src="src/favicon.png" />
+          <span class="fs-4">KESA</span>
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
             <a href="apply.html" class="nav-link px-2 link-light" id="apply"
-              >Enroll</a
+              >Apply</a
             >
           </li>
           <li>
@@ -91,52 +86,94 @@
 
     <!-- Start: Text -->
     <div class="container-fluid p-0 pt-5 mt-5">
-      <div class="container pb-5">
-        <h1 class="display-5"><%= heading %></h1>
-        <p class="lead">You can contact our offices at regular work hours</p>
+      <div class="container text-center p-5">
+        <h1 class="display-5">Contact</h1>
+        <p class="lead">
+          You can contact our offices at regular working hours (8:00AM - 5:00PM)
+        </p>
 
         <hr class="my-4" />
 
         <div class="row">
           <div class="col-md text-center">
-            <h1 class="display-6 mb-5">Contact Info</h1>
-            <p class="lead py-3">
-              <i class="fa fa-clock" aria-hidden="true"></i> Work hours: 0000h -
-              0000h
-            </p>
-            <p class="lead py-3">
-              <i class="fa fa-phone" aria-hidden="true"></i> Phone: +254 7** ***
-              ***
-            </p>
-            <p class="lead py-3">
-              <i class="fa fa-envelope" aria-hidden="true"></i> Email:
-              info@school.com
-            </p>
-            <p class="lead py-3">
-              <i class="fa fa-map" aria-hidden="true"></i> Address: Postal,
-              City, Nation
-            </p>
+            <h1 class="display-6 mb-4">Contact Info</h1>
+            <div class="container p-0 mt-5">
+              <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
+              <br />
+              <p class="lead">(+254) 713 128 043 / (+254) 712 519 920</p>
+
+              <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+              <br />
+              <p class="lead">kesaschool@gmail.com</p>
+
+              <i class="fa fa-2x fa-map" aria-hidden="true"></i> <br />
+              <p class="lead">P.O. BOX 245, Keroka, Kenya</p>
+            </div>
           </div>
 
-          <div class="col-md">
-            <h1 class="display-6 mb-3 text-center">Contact Form</h1>
+          <div class="col-md text-center">
+            <h1 class="display-6 mb-4">Map</h1>
+            <div
+              style="
+                max-width: 100%;
+                list-style: none;
+                transition: none;
+                overflow: hidden;
+                width: 500px;
+                height: 500px;
+              "
+            >
+              <div
+                id="mymap-display"
+                style="height: 100%; width: 100%; max-width: 100%"
+              >
+                <iframe
+                  style="height: 100%; width: 100%; border: 0"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=-0.7785398525052425,+34.96359226359133&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+              </div>
+              <a
+                class="googlemaps-code"
+                href="https://www.embed-map.com"
+                id="grab-mapdata"
+                >https://www.embed-map.com</a
+              ><style>
+                #mymap-display img {
+                  max-width: none !important;
+                  background: none !important;
+                  font-size: inherit;
+                  font-weight: inherit;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div
+            class="col-md py-4 shadow"
+            style="border: solid 1px grey; border-radius: 20px"
+          >
+            <h1 class="display-6 mb-4">Contact Form</h1>
             <form class="form-auth" action="contact.html" method="POST">
               <!-- Message tag here -->
-              <div class="col mb-3">
-                <label class="form-label" for="name">Name</label>
+              <div class="col-md mb-3">
+                <label for="name">Name</label>
                 <input
                   type="text"
                   class="form-control"
                   name="name"
                   id="name"
+                  placeholder="Your name"
                   required
                 />
               </div>
 
-              <div class="col mb-3">
-                <label class="form-label" for="subject">Subject</label>
-                <select class="form-select" aria-label="Subject">
-                  <option selected disabled hidden>Select Reason ...</option>
+              <div class="col-md mb-3">
+                <label for="reason">Reason</label>
+                <select class="form-select" aria-label="Reason" required>
+                  <option selected disabled hidden>Select Option</option>
                   <option value="parent">Parental Inquiry/Request</option>
                   <option value="application">Application Follow-Up</option>
                   <option value="password">Password Recovery</option>
@@ -144,20 +181,19 @@
                 </select>
               </div>
 
-              <div class="col mb-3">
-                <label class="form-label" for="message">Message</label>
+              <div class="col-md mb-3">
+                <label for="message">Message</label>
                 <textarea
                   class="form-control"
                   name="message"
                   id="message"
                   rows="3"
+                  placeholder="Type here"
+                  required
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                class="w-100 btn btn-lg btn-outline-success"
-              >
+              <button type="submit" class="w-100 btn btn-outline-success">
                 Send Message
               </button>
             </form>
