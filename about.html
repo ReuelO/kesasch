@@ -54,13 +54,13 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
-              >Apply</a
+            <a href="about.html" class="nav-link px-2 link-light" id="about"
+              >About</a
             >
           </li>
           <li>
-            <a href="about.html" class="nav-link px-2 link-light" id="about"
-              >About</a
+            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
+              >Apply</a
             >
           </li>
           <li>
@@ -88,8 +88,20 @@
     <div class="container-fluid p-0 pt-5 mt-5">
       <div class="container text-center p-5">
         <h1 class="display-5">About</h1>
-        <p class="lead border-bottom">
-          Jobs open for application at the moment
+        <hr class="my-4" />
+
+        <p class="lead">
+          KESA (KI Elite Sports Academy) is a private institution situated at a
+          secure, serene and conducive learning environment overlooking Keroka
+          town. We are set to improve our community by using every availabale
+          resource and opportunity we have to grow students who get along with
+          and support one another towards a common goal. We make certain that
+          every single student and family feels welcome and understood on equal
+          terms. We aim to produce students that have personal aspirations for
+          the future that they can articulate and believe in and share with
+          others, and think critically about issues of human interest, artistry,
+          craft, legacy, husbandry, agriculture, and more–and then do so. We
+          wants all students ‘on grade level’.
         </p>
 
         <div class="row mt-5">
@@ -104,6 +116,16 @@
             It was set up under the directive of the Ministry of Education of
             Kenya to replace the 8-4-4 system...
           </p>
+
+          <div id="tempDiv" style="display: none"></div>
+          <p id="text"></p>
+
+          <script>
+            var tempDiv = $("#tempDiv");
+            tempDiv.load("src/cbc.txt");
+            var html = tempDiv.find("#theParagraphId").html();
+            $("#text").html(html);
+          </script>
         </div>
 
         <hr class="featurette-divider" />
