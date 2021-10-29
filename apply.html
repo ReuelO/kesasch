@@ -32,8 +32,9 @@
           align-items-center
           justify-content-center justify-content-md-between
           p-3
-          bg-dark
+          bg-white
           fixed-top
+          border-bottom
         "
       >
         <a
@@ -45,7 +46,7 @@
             mb-2
             px-5
             mb-md-0
-            text-white text-decoration-none
+            text-dark text-decoration-none
           "
         >
           <img class="bi me-2" width="40" height="40" src="src/favicon.png" />
@@ -54,65 +55,84 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="about.html" class="nav-link px-2 link-light" id="about"
+            <a href="index.html" class="nav-link px-2 link-dark" id="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link px-2 link-dark" id="about"
               >About</a
             >
           </li>
           <li>
-            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
+            <a href="apply.html" class="nav-link px-2 link-warning h5" id="apply"
               >Apply</a
             >
           </li>
           <li>
-            <a href="contact.html" class="nav-link px-2 link-light" id="contact"
+            <a href="contact.html" class="nav-link px-2 link-dark" id="contact"
               >Contact</a
             >
           </li>
         </ul>
       </header>
-
-      <script>
-        // Show active link
-        if (window.location.href.indexOf("apply") > -1) {
-          $("#apply").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("about") > -1) {
-          $("#about").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("contact") > -1) {
-          $("#contact").toggleClass("link-light link-warning");
-        }
-      </script>
     </div>
     <!-- End: Navbar -->
 
     <!-- Start: Text -->
-    <div class="container-fluid p-0 pt-5 mt-5">
-      <div class="container text-center p-5">
-        <h1 class="display-5">Apply</h1>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <h1>Apply</h1>
         <hr class="my-4" />
 
-        <h4 class="text-center mb-4">
-          <i class="fa fa-calendar"></i> Schedule
+        <p class="lead display-6">
+          <i class="fa fa-2x fa-child"></i> Student admission is ongoing
+        </p>
+        <h4>
+          <i class="fa fa-door-open"></i> Applicants are free to visit the
+          school during normal working hours (8:00AM - 5:00PM)
         </h4>
-        <p class="lead">Student admission is ongoing</p>
-        <p class="lead">
-          Applicants are free to visit the school during normal working hours
-          (8:00AM - 5:00PM) for admission
-        </p>
-        <p class="lead">
-          Interviews are conducted on working days (Monday - Friday)
-        </p>
+        <h4>
+          <i class="fa fa-pen"></i> Interviews are conducted on working days
+          (Monday - Friday)
+        </h4>
       </div>
       <!-- End: Text -->
 
       <!-- Start: Footer -->
-      <footer class="footer mt-auto py-4 bg-light">
-        <div class="container">
-          <a href="#" class="float-end btn btn-lg btn-outline-dark"
-            ><div class="fa fa-angle-up"></div
-          ></a>
-          <p class="text-muted">&copy; 2021 KESA, Inc.</p>
-        </div>
-      </footer>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="float-end btn btn-lg btn-outline-light"
+              ><div class="fa fa-angle-up"></div
+            ></a>
+            <span class="text-muted">&copy; 2021 KESA, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.youtube.com"
+                ><i class="fa fa-2x fa-youtube"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.facebook.com"
+                ><i class="fa fa-2x fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
       <!-- End: Footer -->
       <!-- End: Content -->
     </div>

@@ -32,8 +32,9 @@
           align-items-center
           justify-content-center justify-content-md-between
           p-3
-          bg-dark
+          bg-white
           fixed-top
+          border-bottom
         "
       >
         <a
@@ -45,7 +46,7 @@
             mb-2
             px-5
             mb-md-0
-            text-white text-decoration-none
+            text-dark text-decoration-none
           "
         >
           <img class="bi me-2" width="40" height="40" src="src/favicon.png" />
@@ -54,60 +55,60 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="about.html" class="nav-link px-2 link-light" id="about"
+            <a href="index.html" class="nav-link px-2 link-dark" id="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link px-2 link-dark" id="about"
               >About</a
             >
           </li>
           <li>
-            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
+            <a href="apply.html" class="nav-link px-2 link-dark" id="apply"
               >Apply</a
             >
           </li>
           <li>
-            <a href="contact.html" class="nav-link px-2 link-light" id="contact"
+            <a
+              href="contact.html"
+              class="nav-link px-2 link-warning h5"
+              id="contact"
               >Contact</a
             >
           </li>
         </ul>
       </header>
-
-      <script>
-        // Show active link
-        if (window.location.href.indexOf("apply") > -1) {
-          $("#apply").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("about") > -1) {
-          $("#about").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("contact") > -1) {
-          $("#contact").toggleClass("link-light link-warning");
-        }
-      </script>
     </div>
     <!-- End: Navbar -->
 
     <!-- Start: Text -->
-    <div class="container-fluid p-0 pt-5 mt-5">
-      <div class="container text-center p-5">
-        <h1 class="display-5">Contact</h1>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <h1>Contact</h1>
         <hr class="my-4" />
 
-        <div class="row">
-          <div class="col-md text-center">
+        <div class="row text-center">
+          <div class="col-md m-3 p-5 shadow rounded-5">
             <h1 class="display-6 mb-4">Contact Info</h1>
             <div class="container p-0 mt-5">
               <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
               <br />
-              <p class="lead">(+254) 713 128 043 / (+254) 712 519 920</p>
+              <p class="lead mb-5">
+                (+254) 713 128 043 <br />
+                (+254) 712 519 920
+              </p>
 
               <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
               <br />
-              <p class="lead">kesaschool@gmail.com</p>
+              <p class="lead mb-5">kesaschool@gmail.com</p>
 
               <i class="fa fa-2x fa-map" aria-hidden="true"></i> <br />
-              <p class="lead">P.O. BOX 245, Keroka, Kenya</p>
+              <p class="lead mb-5">P.O. BOX 245, Keroka, Kenya</p>
             </div>
           </div>
 
-          <div class="col-md text-center">
+          <div class="col-md m-3 p-5 shadow rounded-5">
             <h1 class="display-6 mb-4">Map</h1>
             <div
               style="
@@ -145,68 +146,43 @@
             </div>
           </div>
         </div>
-
-        <div class="row my-5">
-          <div
-            class="col-md py-4 shadow"
-            style="border: solid 1px grey; border-radius: 20px"
-          >
-            <h1 class="display-6 mb-4">Contact Form</h1>
-            <form class="form-auth" action="contact.html" method="POST">
-              <!-- Message tag here -->
-              <div class="col-md mb-3">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  id="name"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-
-              <div class="col-md mb-3">
-                <label for="reason">Reason</label>
-                <select class="form-select" aria-label="Reason" required>
-                  <option selected disabled hidden>Select Option</option>
-                  <option value="parent">Parental Inquiry/Request</option>
-                  <option value="application">Application Follow-Up</option>
-                  <option value="password">Password Recovery</option>
-                  <option value="other">Other...</option>
-                </select>
-              </div>
-
-              <div class="col-md mb-3">
-                <label for="message">Message</label>
-                <textarea
-                  class="form-control"
-                  name="message"
-                  id="message"
-                  rows="3"
-                  placeholder="Type here"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="w-100 btn btn-outline-success">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
       <!-- End: Text -->
 
       <!-- Start: Footer -->
-      <footer class="footer mt-auto py-4 bg-light">
-        <div class="container">
-          <a href="#" class="float-end btn btn-lg btn-outline-dark"
-            ><div class="fa fa-angle-up"></div
-          ></a>
-          <p class="text-muted">&copy; 2021 KESA, Inc.</p>
-        </div>
-      </footer>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="float-end btn btn-lg btn-outline-light"
+              ><div class="fa fa-angle-up"></div
+            ></a>
+            <span class="text-muted">&copy; 2021 KESA, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.youtube.com"
+                ><i class="fa fa-2x fa-youtube"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.facebook.com"
+                ><i class="fa fa-2x fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
       <!-- End: Footer -->
       <!-- End: Content -->
     </div>

@@ -32,8 +32,9 @@
           align-items-center
           justify-content-center justify-content-md-between
           p-3
-          bg-dark
+          bg-white
           fixed-top
+          border-bottom
         "
       >
         <a
@@ -45,7 +46,7 @@
             mb-2
             px-5
             mb-md-0
-            text-white text-decoration-none
+            text-dark text-decoration-none
           "
         >
           <img class="bi me-2" width="40" height="40" src="src/favicon.png" />
@@ -54,40 +55,37 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="about.html" class="nav-link px-2 link-light" id="about"
+            <a href="index.html" class="nav-link px-2 link-dark" id="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="nav-link px-2 link-warning h5"
+              id="about"
               >About</a
             >
           </li>
           <li>
-            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
+            <a href="apply.html" class="nav-link px-2 link-dark" id="apply"
               >Apply</a
             >
           </li>
           <li>
-            <a href="contact.html" class="nav-link px-2 link-light" id="contact"
+            <a href="contact.html" class="nav-link px-2 link-dark" id="contact"
               >Contact</a
             >
           </li>
         </ul>
       </header>
-
-      <script>
-        // Show active link
-        if (window.location.href.indexOf("apply") > -1) {
-          $("#apply").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("about") > -1) {
-          $("#about").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("contact") > -1) {
-          $("#contact").toggleClass("link-light link-warning");
-        }
-      </script>
     </div>
     <!-- End: Navbar -->
 
     <!-- Start: Text -->
-    <div class="container-fluid p-0 pt-5 mt-5">
-      <div class="container text-center p-5">
-        <h1 class="display-5">About</h1>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <h1>About</h1>
         <hr class="my-4" />
 
         <p class="lead">
@@ -104,70 +102,118 @@
           wants all students ‘on grade level’.
         </p>
 
-        <div class="row mt-5">
-          <i class="fa fa-3x fa-book-open mb-3"></i>
-          <h2 class="display-6">
-            Education.
-            <span class="text-muted">Updated Curriculum.</span>
-          </h2>
-          <p class="lead">
-            CBC (Competence-Based Curriculum) is the new curriculum for schools
-            in Kenya. <br />
-            It was set up under the directive of the Ministry of Education of
-            Kenya to replace the 8-4-4 system...
-          </p>
+        <div class="container p-5 shadow rounded-5">
+          <div class="row mt-5">
+            <div class="col-sm-3">
+              <i class="fa fa-7x fa-book-open mb-3"></i>
+            </div>
+            <div class="col-sm-9">
+              <h1>Education: <i>Competence-Based Curriculum</i></h1>
+              <p class="lead">
+                CBC is the new curriculum for schools in Kenya. <br />
+                It was set up under the directive of the Ministry of Education
+                of Kenya to replace the 8-4-4 system...
+              </p>
+            </div>
 
-          <div id="tempDiv" style="display: none"></div>
-          <p id="text"></p>
+            <div id="tempDiv" style="display: none"></div>
+            <p id="text"></p>
 
-          <script>
-            var tempDiv = $("#tempDiv");
-            tempDiv.load("src/cbc.txt");
-            var html = tempDiv.find("#theParagraphId").html();
-            $("#text").html(html);
-          </script>
-        </div>
+            <script>
+              var tempDiv = $("#tempDiv");
+              tempDiv.load("src/cbc.txt");
+              var html = tempDiv.find("#theParagraphId").html();
+              $("#text").html(html);
+            </script>
+          </div>
 
-        <hr class="featurette-divider" />
+          <hr class="featurette-divider" />
 
-        <div class="row">
-          <i class="fa fa-3x fa-plus mb-3"></i>
-          <h2 class="display-6">
-            Benefits.
-            <span class="text-muted">Extras.</span>
-          </h2>
-          <p class="lead">
-            Some other benefits include: <br />
-            Computer studies <br />
-            Transport services <br />
-            Guidance and counselling
-          </p>
-        </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <i class="fa fa-7x fa-plus-circle mb-3"></i>
+            </div>
+            <div class="col-sm-9">
+              <h1>Advantages: <i>Better Services</i></h1>
+              <p class="lead">The benefits of being part of KESA include:</p>
 
-        <hr class="featurette-divider" />
+              <div class="container px-4" id="icon-grid">
+                <div
+                  class="
+                    row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4
+                    g-4
+                    py-5
+                  "
+                >
+                  <div class="col d-flex align-items-start">
+                    <i
+                      class="
+                        bi
+                        text-muted
+                        flex-shrink-0
+                        me-3
+                        fa fa-2x fa-desktop
+                      "
+                      aria-hidden="true"
+                    ></i>
+                    <div>
+                      <h4 class="fw-bold mb-0">Technology</h4>
+                      <p>We have a fully-equipped computer room</p>
+                    </div>
+                  </div>
 
-        <div class="row">
-          <i class="fa fa-3x fa-pen mb-3"></i>
-          <h2 class="display-6">
-            Registration. <span class="text-muted">Ongoing.</span>
-          </h2>
-          <p class="lead">
-            Student admissions are still in progress. <br />
-            Interview dates: 22nd August 2021.
-          </p>
+                  <div class="col d-flex align-items-start">
+                    <i
+                      class="bi text-muted flex-shrink-0 me-3 fa fa-2x fa-bus"
+                      aria-hidden="true"
+                    ></i>
+                    <div>
+                      <h4 class="fw-bold mb-0">Transport</h4>
+                      <p>We have comfortable vans</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End: Text -->
 
       <!-- Start: Footer -->
-      <footer class="footer mt-auto py-4 bg-light">
-        <div class="container">
-          <a href="#" class="float-end btn btn-lg btn-outline-dark"
-            ><div class="fa fa-angle-up"></div
-          ></a>
-          <p class="text-muted">&copy; 2021 KESA, Inc.</p>
-        </div>
-      </footer>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="float-end btn btn-lg btn-outline-light"
+              ><div class="fa fa-angle-up"></div
+            ></a>
+            <span class="text-muted">&copy; 2021 KESA, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.youtube.com"
+                ><i class="fa fa-2x fa-youtube"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.facebook.com"
+                ><i class="fa fa-2x fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
       <!-- End: Footer -->
       <!-- End: Content -->
     </div>

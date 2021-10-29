@@ -32,8 +32,9 @@
           align-items-center
           justify-content-center justify-content-md-between
           p-3
-          bg-dark
+          bg-white
           fixed-top
+          border-bottom
         "
       >
         <a
@@ -45,7 +46,7 @@
             mb-2
             px-5
             mb-md-0
-            text-white text-decoration-none
+            text-dark text-decoration-none
           "
         >
           <img class="bi me-2" width="40" height="40" src="src/favicon.png" />
@@ -54,33 +55,27 @@
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="about.html" class="nav-link px-2 link-light" id="about"
+            <a href="index.html" class="nav-link px-2 link-warning h5" id="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link px-2 link-dark" id="about"
               >About</a
             >
           </li>
           <li>
-            <a href="apply.html" class="nav-link px-2 link-light" id="apply"
+            <a href="apply.html" class="nav-link px-2 link-dark" id="apply"
               >Apply</a
             >
           </li>
           <li>
-            <a href="contact.html" class="nav-link px-2 link-light" id="contact"
+            <a href="contact.html" class="nav-link px-2 link-dark" id="contact"
               >Contact</a
             >
           </li>
         </ul>
       </header>
-
-      <script>
-        // Show active link
-        if (window.location.href.indexOf("apply") > -1) {
-          $("#apply").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("about") > -1) {
-          $("#about").toggleClass("link-light link-warning");
-        } else if (window.location.href.indexOf("contact") > -1) {
-          $("#contact").toggleClass("link-light link-warning");
-        }
-      </script>
     </div>
     <!-- End: Navbar -->
 
@@ -116,8 +111,8 @@
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>KESA School</h1>
-              <p>Education with a Difference</p>
-              <p>
+              <p class="lead">Education with a Difference</p>
+              <p class="lead">
                 <a class="btn btn-lg btn-primary" href="apply.html"
                   >Apply today</a
                 >
@@ -136,7 +131,7 @@
                 A private institution situated at a secure, serene and conducive
                 learning environment...
               </p>
-              <p>
+              <p class="lead">
                 <a class="btn btn-lg btn-success" href="about.html"
                   >Learn more</a
                 >
@@ -146,12 +141,12 @@
         </div>
 
         <div class="carousel-item">
-          <img src="src/images/hall1.jpg" alt="School" />
+          <img src="src/images/school3.jpg" alt="School" />
 
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>Join us</h1>
-              <p>
+              <p class="lead">
                 <a class="btn btn-lg btn-warning" href="#">Browse gallery</a>
               </p>
             </div>
@@ -182,121 +177,80 @@
     <!-- End: Carousel -->
 
     <!-- Start: Text -->
-    <div class="container-fluid p-0 pt-5 mt-5">
-      <div class="container text-center my-5">
-        <i class="fa fa-3x fa-school mb-3 mb-3"></i>
-        <p class="lead">
-          KESA (KI Elite Sports Academy) is a private institution situated at a
-          secure, serene and conducive learning environment overlooking Keroka
-          town. We are set to improve our community by using every availabale
-          resource and opportunity we have to grow students who get along with
-          and support one another towards a common goal. We make certain that
-          every single student and family feels welcome and understood on equal
-          terms. We aim to produce students that have personal aspirations for
-          the future that they can articulate and believe in and share with
-          others, and think critically about issues of human interest, artistry,
-          craft, legacy, husbandry, agriculture, and more–and then do so. We
-          wants all students ‘on grade level’.
-        </p>
+    <div class="container-fluid text-center mt-5">
+      <div class="container p-5">
+        <h2 class="pb-5 border-bottom" id="main">
+          KESA School: <i>Education With A Difference</i>
+        </h2>
 
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <i class="fa fa-3x fa-book-open"></i>
-            <h2 class="featurette-heading">
-              Education. <span class="text-muted">Updated Curriculum.</span>
-            </h2>
-            <p class="lead">
-              We believe in offering holistic and quality CBC (Competence-Based
-              Curriculum) education, the new educational curriculum according to
-              the directive of the Ministry of Education of Kenya...
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img
-              class="
-                bd-placeholder-img bd-placeholder-img-lg
-                featurette-image
-                img-fluid
-                mx-auto
-              "
-              width="500"
-              height="500"
-              src="src/"
-              alt="CBC - the new school curriculum in Kenya"
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <i class="fa fa-3x fa-plus mb-3"></i>
-            <h2 class="featurette-heading">
-              Benefits. <span class="text-muted">Extras.</span>
-            </h2>
-            <p class="lead">
-              Some other benefits include: <br />
-              Computer studies <br />
-              Transport services <br />
-              Guidance and counselling
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              class="
-                bd-placeholder-img bd-placeholder-img-lg
-                featurette-image
-                img-fluid
-                mx-auto
-              "
-              width="500"
-              height="500"
-              src="src/"
-              alt="Picture collation: computers, transport"
-            />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <i class="fa fa-3x fa-pen mb-3"></i>
-            <h2 class="featurette-heading">
-              Registration. <span class="text-muted">Ongoing.</span>
-            </h2>
-            <p class="lead">Student admissions are still in progress.</p>
-          </div>
-          <div class="col-md-5">
-            <img
-              class="
-                bd-placeholder-img bd-placeholder-img-lg
-                featurette-image
-                img-fluid
-                mx-auto
-              "
-              width="500"
-              height="500"
-              src="src/"
-              alt="Picture collation: computers, transport"
-            />
+        <div class="container" id="featured-3">
+          <div class="row g-5 py-5">
+            <div class="feature col-md-4">
+              <i class="fa fa-5x fa-graduation-cap"></i>
+              <h2>Education</h2>
+              <p class="lead">Our motto is "Education with a Difference"</p>
+              <a href="about.html" class="btn btn-outline-primary px-3">
+                <i class="fa fa-question-circle mx-2" aria-hidden="true"></i>
+                Learn more
+              </a>
+            </div>
+            <div class="feature col-md-4">
+              <i class="fa fa-5x fa-book-open"></i>
+              <h2>Goals</h2>
+              <p class="lead">Our goal is to "Aspire, Believe & Achieve"</p>
+              <a href="contact.html" class="btn btn-outline-warning px-3">
+                <i class="fa fa-phone-alt mx-2" aria-hidden="true"></i>
+                Reach us
+              </a>
+            </div>
+            <div class="feature col-md-4">
+              <i class="fa fa-5x fa-home"></i>
+              <h2>Opportunity</h2>
+              <p class="lead">Join KESA to enjoy its many benefits</p>
+              <a href="apply.html" class="btn btn-outline-success px-3">
+                <i class="fa fa-hand-pointer mx-2" aria-hidden="true"></i>
+                Apply now
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <!-- End: Text -->
 
       <!-- Start: Footer -->
-      <footer class="footer mt-auto py-4 bg-light">
-        <div class="container">
-          <a href="#" class="float-end btn btn-lg btn-outline-dark"
-            ><div class="fa fa-angle-up"></div
-          ></a>
-          <p class="text-muted">&copy; 2021 KESA, Inc.</p>
-        </div>
-      </footer>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="float-end btn btn-lg btn-outline-light"
+              ><div class="fa fa-angle-up"></div
+            ></a>
+            <span class="text-muted">&copy; 2021 KESA, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.youtube.com"
+                ><i class="fa fa-2x fa-youtube"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.facebook.com"
+                ><i class="fa fa-2x fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
       <!-- End: Footer -->
       <!-- End: Content -->
     </div>
